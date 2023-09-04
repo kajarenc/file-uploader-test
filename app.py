@@ -1,5 +1,8 @@
 import streamlit as st
+from streamlit import config
 
+
+st.write(config.get_options_for_section("server"))
 
 image = st.camera_input("CAMERA INPUT")
 
